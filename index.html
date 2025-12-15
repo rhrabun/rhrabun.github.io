@@ -1,0 +1,132 @@
+<html land="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"
+        />
+        <title>Raman Hrabun</title>
+        <meta
+            name="description"
+            content="Kind of CV written in html&css because why complicate things"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <img
+                src="assets/theme-light-dark.svg"
+                alt=""
+                width="24"
+                height="24"
+                class="invert"
+            />
+        </button>
+        <div class="intro">
+            <img src="assets/me.webp" alt="My portrait" class="intro__photo" />
+
+            <div class="intro__text">
+                <h1>Raman Hrabun</h1>
+                <p class="intro__tagline">
+                    Senior Cloud Engineer. I automate things.
+                </p>
+                <div class="intro__links">
+                    <a href="https://github.com/rhrabun" class="icon-link"
+                        ><img
+                            src="assets/github.svg"
+                            alt=""
+                            width="24"
+                            height="24"
+                            class="invert"
+                    /></a>
+                    <a href="https://www.linkedin.com/in/yourname/" class="icon-link"
+                        ><img
+                            src="assets/linkedin.svg"
+                            alt=""
+                            width="24"
+                            height="24"
+                            class="invert"
+                    /></a>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="invert">
+         
+        <section class="bio">
+            <h2>About Me</h2>
+            <p>
+                I’m a Senior Cloud Engineer with experience in AWS, Python scripting, and Infrastructure as Code.
+                I enjoy building reliable, minimal and fully automated solutions and continuously improving my skills both professionally
+                and personally.<br>
+                Outside of work, I try to focus on self-development and exploring new technologies. I also enjoy reading, boxing and cooking.
+            </p>
+        </section>
+        
+        <hr class="invert"
+        
+        
+        <section class="experience">
+            <h2>Professional Experience</h2>
+        
+            <div class="timeline">
+                    {% for job in site.data.jobs %}
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content">
+                            <div class="timeline__header">
+                                <span class="timeline__company">{{ job.company }}</span>
+                                <span class="timeline__position">{{ job.position }}</span>
+                                <span class="timeline__dates">{{ job.dates }}</span>
+                            </div>
+                            <p class="timeline__description">
+                                {{ job.description }}
+                            </p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+        </section>
+        
+        <hr class="invert"
+        
+        <section class="projects">
+            <h2>Notable Projects</h2>
+        
+            <div class="timeline">
+                {% for project in site.data.projects %}
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <span class="timeline__company">{{ project.title }}</span>
+                            <span class="timeline__position">{{ project.role }}</span>
+                        </div>
+                        <p class="timeline__description">{{ project.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        
+        <script>
+            const toggle = document.getElementById("theme-toggle");
+            const html = document.documentElement;
+
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "dark") {
+                html.setAttribute("data-theme", "dark");
+            }
+
+            toggle.addEventListener("click", () => {
+                if (html.getAttribute("data-theme") === "dark") {
+                    html.removeAttribute("data-theme");
+                    localStorage.setItem("theme", "light");
+                } else {
+                    html.setAttribute("data-theme", "dark");
+                    localStorage.setItem("theme", "dark");
+                }
+            });
+        </script>
+    </body>
+</html>
