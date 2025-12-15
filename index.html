@@ -83,7 +83,7 @@
                                 <span class="timeline__dates">{{ job.dates }}</span>
                             </div>
                             <p class="timeline__description">
-                                {{ job.description }}
+                                {{ job.description | markdownify }}
                             </p>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                             <span class="timeline__company">{{ project.title }}</span>
                             <span class="timeline__position">{{ project.role }}</span>
                         </div>
-                        <p class="timeline__description">{{ project.description }}</p>
+                        <p class="timeline__description">{{ project.description | markdownify }}</p>
                     </div>
                 </div>
                 {% endfor %}

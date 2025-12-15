@@ -1,9 +1,49 @@
-- title: Project One
-  role: Cloud Delivery Senior Engineer
+- title: Unified Customer Identity platform
+  role: Cloud Infrastructure Engineer
   description: >
-    One
+    Platform for unifying customer identities across all applications and websites for a renowned provider
+    of smart beds and innovative sleep solutions.
+    Key responsibilities:
+      * Automated operational tasks using Python & Bash
+      * Managed AWS Cloud infrastructure with Terraform
+      * Handled system operations, including monitoring, logging, and analytics
 
-- title: Project Two
-  role: Cloud Engineer
+- title: Serverless Search Engine
+  role: Backend Cloud Developer
   description: >
-    Two
+    Serverless search engine delivering technical documentation based on machinery failure codes for
+    a global leader in smoke-free tobacco products.
+    Key responsibilities:
+      * Built a serverless backend using Python
+      * Managed AWS Cloud infrastructure with Terraform
+
+- title: Data Lake Implementation
+  role: Cloud Data Engineer
+  description: >
+    Data platform implementation for a leading automotive components manufacturer, designed to
+    collect, transform, and prepare data for business reporting.
+    Key responsibilities:
+      * Developed data transformation logic using PySpark and SQL
+      * Managed AWS infrastructure for data storage and processing based on Medallion Architecture
+      principles
+      * Reviewed, optimized and maintained automation pipelines to improve efficiency
+
+- title: Multi Cloud Platform
+  role: Cloud Developer
+  description: >
+    Solution enabling se amless deployment of applications on virtual machines and Kubernetes
+    clusters hosted by leading cloud service providers.
+    Key responsibilities:
+      * Developed CI/CD processes to streamline deployment
+      * Contributed to the development of a serverless backend using Node.js
+      * Implemented AWS Cloud infrastructure using CloudFormation & SLS Framework
+
+- title: Network Analytics Platform
+  role: Site Reliability Engineer
+  description: >
+    Part of the Cloud Ops/SRE team responsible for ensuring seamless application availability and
+    performance.
+    Key responsibilities:
+      * Ensured high availability and stability of Docker Swarm clusters & Linux servers
+      * Automated operational workflows and infrastructure tasks
+      * Developed and managed CI/CD pipelines
