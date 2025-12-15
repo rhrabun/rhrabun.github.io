@@ -21,10 +21,6 @@
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 1rem 1rem;
-    }
-    
     .intro {
         flex-direction: column;
         align-items: center;
@@ -42,8 +38,8 @@
 }
 
 body {
-    margin: 0;
-    padding: 5% 15%;
+    margin: 5vh auto;
+    padding: 0 2vw;
     background: var(--bg);
     color: var(--text);
     font-family:
@@ -52,7 +48,7 @@ body {
     font-size: 16px;
     line-height: 1.8;
     text-shadow: 0 1px 0 var(--shadow);
-    max-width: 73%;
+    max-width: 73vw;
 }
 
 code {
