@@ -120,6 +120,8 @@ a:not(.icon-link):hover {
 
 .intro__links a img {
     text-decoration: none;
+    background: none;
+    padding: 0;
 }
 
 hr {
