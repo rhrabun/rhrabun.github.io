@@ -1,7 +1,7 @@
 ---
 ---
 
-<html lang="en" data-theme="dark">
+<html land="en" data-theme="dark">
     <head>
         <meta charset="UTF-8" />
         <meta
@@ -15,17 +15,12 @@
         />
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link rel="icon" href="assets/tab-icon.png" sizes="16x16" type="image/png">
-        <meta property="og:title" content="Raman Hrabun">
-        <meta property="og:description" content="Simple web version of my CV because why complicate things">
-        <meta property="og:image" content="assets/me.webp">
-        <meta property="og:url" content="https://rhrabun.github.io/">
-        <meta property="og:type" content="website">
     </head>
     <body>
         <button id="theme-toggle" aria-label="Toggle dark mode">
             <img
                 src="assets/theme-light-dark.svg"
-                alt="Toggle theme icon"
+                alt=""
                 width="24"
                 height="24"
                 class="invert"
@@ -43,7 +38,7 @@
                     <a href="https://github.com/rhrabun" class="icon-link"
                         ><img
                             src="assets/github.svg"
-                            alt="GitHub profile link icon"
+                            alt=""
                             width="24"
                             height="24"
                             class="invert"
@@ -51,7 +46,7 @@
                     <a href="https://www.linkedin.com/in/rhrabun/" class="icon-link"
                         ><img
                             src="assets/linkedin.svg"
-                            alt="LinkedIn profile link icon"
+                            alt=""
                             width="24"
                             height="24"
                             class="invert"
@@ -68,7 +63,7 @@
                 I’m a Senior Cloud Engineer with experience in AWS, Python scripting, and Infrastructure as Code.
                 I enjoy building reliable, minimal and fully automated solutions and continuously improving my skills both professionally
                 and personally.<br>
-                Outside of work, I try to focus on self-development and exploring new technologies. I also enjoy reading and boxing.
+                Outside of work, I try to focus on self-development and exploring new technologies. I also enjoy reading, boxing and cooking.
             </p>
         </section>
         
@@ -122,7 +117,7 @@
             const html = document.documentElement;
 
             const savedTheme = localStorage.getItem("theme");
-            if (savedTheme === "dark" || savedTheme === null) {
+            if (savedTheme === "dark") {
                 html.setAttribute("data-theme", "dark");
             }
 
